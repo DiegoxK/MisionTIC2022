@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class weeklySalary {
+public class Ejercicio4 {
 
     // Hacer un programa que calcule e imprima
     // el salario semanal de un empleado a partir de
