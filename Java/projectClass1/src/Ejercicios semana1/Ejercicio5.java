@@ -12,30 +12,39 @@ public class Ejercicio5{
     public static void main(String[] args) {
 
         int number = (int) (Math.random()* 100);
+
         Scanner scan = new Scanner(System.in);
 
-        while(true){
+        try{
 
-            System.out.print("Ingrese su numero: ");
-            int userNumber = scan.nextInt();
+            while(true){
 
-            if (number < userNumber){
+                System.out.print("Ingrese su numero: ");
+                int userNumber = scan.nextInt();
 
-                System.out.print("El numero que busca es menor!\n");
+                if (number < userNumber){
 
-            } else if (number > userNumber){
+                    System.out.print("El numero que busca es menor!\n");
 
-                System.out.print("El número que busca es mayor!\n");
-                
-            } else if (number == userNumber){
+                } else if (number > userNumber){
 
-                System.out.print("Felicidades!");
+                    System.out.print("El número que busca es mayor!\n");
+                    
+                } else if (number == userNumber){
 
-                break;
+                    System.out.print("Felicidades!");
+
+                    break;
 
         }
     }
+}
 
+
+finally {
+    scan.close();
+
+}
     }
     
 }
